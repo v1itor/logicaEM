@@ -1,17 +1,17 @@
-#Este é o meu primeiro programa em Python!
+print("jogo de dados:")
+from random import randint
 
-from random import randint #Importa a função de gerar números aleatórios
+dados1 = randint(1, 6)
+print("Primeiro dado do player 1:", dados1)
+dados2 = randint(1, 6)
+print("Segundo dado do player 2:", dados2)
+dados3 = randint(1, 6)
+print("Primeiro dado do Player 2:", dados3)
+dados4 = randint(1, 6)
+print("Segundo dado do player 2: ", dados4)
+print("Gerando resultado...")
 
-print("Boa sorte aos jogadores!")
-
-dado1 = randint(1,6) # gera um número entre 1 e 6 aleatoriamente
-print("dado do player 1 :" , dado1)
-
-dado2 = randint(1,6)
-print("dado do player 2 :" , dado2)
-
-if dado1 > dado2: #}"if" Verifica se a variável dado1 é ">" maior que a variável dado2
-    print("Player 1 ganhou")
-
-if dado2 > dado1:
-    print("player 2 ganhou")
+if dados1 + dados2 > dados3 + dados4:
+    print("Player 1 win!")
+elif dados1 + dados2 < dados3 + dados4:
+    print("Player 2 win!")
