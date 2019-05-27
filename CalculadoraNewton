@@ -1,0 +1,12 @@
+print('Calculadora gravitacional by NASA')
+
+number_1 = float(input('Digite o peso do corpo 1 (em kg): '))
+number_2 = float(input('Digite o peso do corpo 2 (em kg): '))
+number_3 = 0.0000000000667
+number_4 = float(input('Digite a distância entre os dois corpos (em m) '))
+
+print("\nResultado em Newtons (kg.m/s²): \n")
+
+print(number_3 * number_1 * number_2 / number_4 ** 2)
+print("")
+input('Pressione Enter para fechar'))
